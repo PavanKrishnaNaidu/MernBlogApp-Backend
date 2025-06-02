@@ -18,7 +18,11 @@ const Port = process.env.PORT || 5000 ;
 
 app.listen(Port,()=>{
   console.log("Server is running at 5000...");
-})
+});
+
+app.get('/',(req,res)=>{
+  res.send("HELLO");
+});
 
 
 
